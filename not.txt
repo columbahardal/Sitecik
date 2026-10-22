@@ -1,0 +1,10 @@
+<a href="#" id="shareBtn" class="action-card">
+                <div class="action-icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="action-content">
+                    <span class="action-title">Bizi Paylaşın</span>
+                    <span class="action-sub">Sayfamızı Arkadaşlarınızla Paylaşın</span>
+                </div>
+                <i class="fa-solid fa-chevron-right action-arrow"></i>
+            </a>

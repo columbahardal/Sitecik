@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'Maiandra GD', sans-serif;
+    src: local('Maiandra GD'), local('MaiandraGD');
+}
+
+body {
+    padding: 10px;
+    background-color: #1d1509;
+    color: white;
+    font-family: 'Maiandra GD', 'Segoe UI', 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+div,
+footer {
+    font-family: 'Maiandra GD', 'Segoe UI', 'Quicksand', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navayar {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+.jacquard-24-regular {
+    font-family: "Jacquard 24", serif !important;
+    font-weight: 400;
+    font-style: normal;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+}
+
+.main-brand-title {
+    font-family: "Jacquard 24", serif !important;
+    font-size: 5.5rem;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+}
+
+.main-logo-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+}
+
+.menu-wrapper {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 420px;
+    padding: 30px 15px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    z-index: -1;
+}
+
+.brand-header .navbar-brand {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 15px 0 0 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.baba-text {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #f1f1f1;
+    letter-spacing: 0.5px;
+}
+
+
+:root {
+    --bg-dark: #0d0b02;
+    --gold-main: #a86d14;
+    --gold-light: #e1a245;
+    --card-bg: rgba(25, 20, 8, 0.85);
+    --card-border: rgba(168, 109, 20, 0.4);
+    --text-white: #ffffff;
+    --text-muted: #cccccc;
+}
+
+.action-cards-container {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 15px;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 16px 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(8px);
+}
+
+.action-card:hover {
+    background: rgba(168, 109, 20, 0.2);
+    border-color: var(--gold-light);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(225, 162, 69, 0.25);
+    color: var(--text-white);
+}
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(168, 109, 20, 0.15);
+    color: var(--gold-light);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.action-card:hover .action-icon {
+    background: var(--gold-light);
+    color: var(--bg-dark);
+}
+
+.action-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+
+.action-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-white);
+    letter-spacing: 0.3px;
+}
+
+.action-sub {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.action-badge {
+    background: var(--gold-main);
+    color: var(--text-white);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease;
+}
+
+.action-card:hover .action-badge {
+    background: var(--gold-light);
+    color: var(--bg-dark);
+}
+
+.action-arrow {
+    color: var(--gold-main);
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.action-card:hover .action-arrow {
+    transform: translateX(6px);
+    color: var(--gold-light);
+}
+
+
+.products-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 380px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 18px;
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+}
+
+.flip-card-front {
+    background: rgba(25, 20, 8, 0.88);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
+    transition: transform 0.4s ease;
+}
+
+.flip-card:hover .product-img {
+    transform: scale(1.08);
+}
+
+.product-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+
+.flip-card-back {
+    background: rgba(35, 26, 10, 0.96);
+    border-color: var(--gold-light);
+    color: white;
+    transform: rotateY(180deg);
+    justify-content: space-between;
+    box-shadow: 0 10px 28px rgba(225, 162, 69, 0.25);
+}
+
+.flip-card-back h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(225, 162, 69, 0.3);
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+
+.product-desc-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 6px;
+    text-align: left;
+}
+
+
+.product-desc-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.product-desc-box::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.product-desc-box::-webkit-scrollbar-thumb {
+    background: var(--gold-light);
+    border-radius: 4px;
+}
+
+.product-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    .main-brand-title {
+        font-size: 3.8rem;
+        letter-spacing: 2px;
+    }
+
+    .main-logo-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu-wrapper {
+        min-height: 300px;
+        padding: 20px 10px;
+    }
+
+    .baba-text {
+        font-size: 1.05rem;
+    }
+
+    .flip-card {
+        height: 360px;
+    }
+
+    .product-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 1.25rem;
+    }
+
+     @import url('https://fonts.cdnfonts.com/css/maiandra-gd');
+     
+}
+
+.columba-text {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 70px;
+      color: #ffffff;
+      
+      padding: 5px;
+    }
